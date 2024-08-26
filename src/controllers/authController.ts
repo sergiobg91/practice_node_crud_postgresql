@@ -15,7 +15,7 @@ export const signin = async (req: Request, res: Response): Promise<void> => {
     }
 
     if (!password) {
-      res.status(400).json({message: "La contraseña es requerida"})
+      res.status(400).json({message: "La contrasena es requerida"})
       return
     }
 
@@ -60,7 +60,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
 
     const ifPasswordOk = await comparePassword(password, user.password)
     if (!ifPasswordOk) {
-      res.status(401).json({ error: 'Usuario o contraseña no coincide' })
+      res.status(401).json({ error: 'Usuario o contrasena no coincide' })
   }
     
 
