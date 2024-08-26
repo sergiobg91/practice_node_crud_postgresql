@@ -4,7 +4,9 @@
   "description": "Practica de node con postgresql",
   "main": "index.js",
   "scripts": {
-    "dev": "tsnd --respawn --clear src/server.ts"
+    "dev": "tsnd --respawn --clear src/server.ts",
+    "start": "node dist/server.js",
+    "build": "rimraf ./dist && tsc"
   },
   "author": "Sergio Beltran",
   "license": "MIT",
