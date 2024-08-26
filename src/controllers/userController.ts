@@ -15,7 +15,7 @@ export const createUser = async (req: Request, res: Response): Promise<void> => 
     }
 
     if (!password) {
-      res.status(400).json({message: "La contraseña es requerida"})
+      res.status(400).json({message: "La contrasena es requerida"})
       return
     }
 

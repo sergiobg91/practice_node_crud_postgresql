@@ -51,7 +51,6 @@ export const login = async (req: Request, res: Response): Promise<void> => {
 
   try {
     const user = await prisma.findUnique({where: { email } })
-    // const pass: string = user.password || 'default'
     
     if (!user) {
       res.status(404).json({ error: 'Usuario no encontrado' })
